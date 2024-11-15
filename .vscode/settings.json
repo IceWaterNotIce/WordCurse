@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "My project (7).sln"
+    "dotnet.defaultSolution": "WordCurse.sln"
 }
