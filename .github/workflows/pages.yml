@@ -27,6 +27,13 @@ jobs:
           # Copy new files from main
           git checkout main -- Builds/Web/*
           mv Builds/Web/* . 
+
+          # Check for changes
+          if [ -n "$(git status --porcelain)" ]; then
+          # Stage changes and commit
           git add -A
           git commit -m "Update docs from main"
           git push origin gh-pages
+          else
+            echo "No changes to commit. Skipping push."
+          fi
