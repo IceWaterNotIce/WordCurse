@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         SoundManager.Instance.PlayBGM();
-
     }
 
     // Update is called once per frame
