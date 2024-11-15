@@ -1,0 +1,29 @@
+name: Copy Build web to gh-pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  copy-web:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "IceWaterNotIce"
+          git config --global user.email "icewaternotice@gmail.com"
+
+      - name: Copy web to gh-pages branch
+        run: |
+          git fetch
+          git checkout gh-pages
+          git checkout main -- Builds/Web/*
+          mv Builds/Web/* . 
+          git add -A
+          git commit -m "Update docs from main"
+          git push origin gh-pages
