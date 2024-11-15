@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameRoom.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Setting.unity
+    guid: 7f56a2efcccded745a5cc5ae4aa3541f
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 902201382e0f62e4296fe13f586d4840
+  - enabled: 1
+    path: Assets/Scenes/Achievement.unity
+    guid: 618ab05720a95ca46b52f06c34d68b9e
   m_configObjects: {}
