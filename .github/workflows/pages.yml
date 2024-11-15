@@ -36,4 +36,8 @@ jobs:
           git push origin gh-pages
           else
             echo "No changes to commit. Skipping push."
+            # Exit with 0 to indicate success
+            exit 0
           fi
+
+          
