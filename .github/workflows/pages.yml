@@ -27,13 +27,6 @@ jobs:
           # Copy new files from main
           git checkout main -- Builds/Web/*
           mv Builds/Web/* . 
-
-          # if no changes then exit
-          git diff --exit-code || exit 0
-
-          # Stage changes and commit
           git add -A
           git commit -m "Update docs from main"
           git push origin gh-pages
-
-          
